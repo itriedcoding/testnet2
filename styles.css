@@ -1,0 +1,148 @@
+:root {
+    --bg-dark: #121212;
+    --bg-darker: #0a0a0a;
+    --text-primary: #e0e0e0;
+    --text-secondary: #b0b0b0;
+    --accent-red: #ff4444;
+    --accent-green: #00ff88;
+    --border-color: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: var(--accent-red);
+    font-size: 2.5em;
+}
+
+header p {
+    color: var(--text-secondary);
+}
+
+.search-box {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 12px;
+    background-color: var(--bg-darker);
+    border: 1px solid var(--border-color);
+    border-radius: 4px 0 0 4px;
+    color: var(--text-primary);
+    font-size: 16px;
+}
+
+.search-box button {
+    padding: 12px 20px;
+    background-color: var(--accent-red);
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.search-box button:hover {
+    background-color: #ff0000;
+}
+
+.results-container {
+    background-color: var(--bg-darker);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.loading {
+    text-align: center;
+    color: var(--accent-green);
+    font-size: 1.2em;
+}
+
+.results {
+    display: none;
+}
+
+.platform-result {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 4px solid var(--accent-red);
+    background-color: #1a1a1a;
+}
+
+.platform-result h3 {
+    color: var(--accent-red);
+    margin-top: 0;
+}
+
+.platform-result p {
+    margin: 5px 0;
+}
+
+.password-list {
+    background-color: #222;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.password-list h4 {
+    color: var(--accent-green);
+    margin: 0 0 10px 0;
+}
+
+.password-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.password-list li {
+    padding: 5px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.report-section {
+    margin-top: 30px;
+    background-color: var(--bg-darker);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 20px;
+}
+
+#downloadReportBtn {
+    padding: 10px 20px;
+    background-color: var(--accent-green);
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#downloadReportBtn:hover {
+    background-color: #00e070;
+}
